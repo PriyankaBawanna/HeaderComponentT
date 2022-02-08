@@ -1,0 +1,216 @@
+.arrowdown {
+  border: solid;
+  border-color: #7c8288;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrowdown:hover {
+  transform: rotate(225deg);
+}
+.arrowdown:hover:hover {
+  border-color: #258bff;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 10px 0.75rem 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #7c8288;
+  cursor: pointer;
+  -webkit-transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition-delay: 0.1s !important;
+  transition-delay: 0.1s !important;
+  margin-left: 10%;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial;
+  margin-left: 12px;
+}
+
+.dropdown-content-Plan {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+
+  z-index: 1;
+  margin-left: 5%;
+
+  height: 340px;
+  width: 96.99rem;
+
+  margin-left: -2em;
+  margin-right: -8rem;
+  margin-top: 0rem;
+
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0.1s;
+}
+
+.dropdownplan:hover .dropdown-content-Plan {
+  display: block;
+}
+
+.main-nav__link:hover {
+  color: rgb(36, 138, 255);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #7c8288;
+}
+.arrow {
+  border: solid #7c8288;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow:hover {
+  transform: rotate(235deg);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.planList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 7%;
+  padding: 1.2em;
+
+  height: 50%;
+  width: 23%;
+}
+.planList-li {
+  list-style-type: none;
+  width: 300px;
+  margin-bottom: 0;
+}
+.planlistcontent {
+  display: block;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  color: #50565e;
+  border-bottom: none;
+  padding: 7px 10px;
+  -webkit-transition: 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.popup-link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  /* background: url(popup-icon.svg) no-repeat;*/
+}
+
+.popup-link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  background: url(https://qa-portal.ctsi-global.com/TmsV3/dist/Main/Menu/popup-icon.svg)
+    no-repeat;
+}
+.plancontainer {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: -2%;
+}
+
+.line {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0px;
+
+  left: 47%;
+  background-color: rgb(255, 255, 255);
+  border-right: 5px solid rgb(21, 101, 193);
+  transform: skew(-22deg);
+  width: 145px;
+}
+.planList-li a:hover {
+  background-color: rgb(233, 231, 231);
+  color: #1565c1;
+}
+
+.svgImage {
+  height: 339px;
+  width: 51%;
+  margin-left: 24%;
+
+  float: right;
+  padding: 0 2.375rem 0 3.125rem;
+  background-color: #1565c1;
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    right top,
+    from(#258bff),
+    to(#1565c1)
+  );
+  background-image: linear-gradient(90deg, #258bff 0, #1565c1 100%);
+  line-height: 60px;
+  padding-right: 10.375rem;
+}
+.content-plan-logo {
+  width: 50%;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 25%;
+}
+
+/*for icon */
+.arrowdown {
+  border: solid;
+  border-color: #7c8288;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.arrowdown:hover {
+  transform: rotate(225deg);
+}
+
+@media screen and (max-device-width: 1035px) and (min-device-width: 375px) {
+  .content-plan-logo {
+    width: 30%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.main-nav__link {
+  display: block;
+  padding: 10px 0.75rem 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #7c8288;
+  cursor: pointer;
+  -webkit-transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition-delay: 0.1s !important;
+  transition-delay: 0.1s !important;
+  margin-left: 10%;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial;
+  margin-left: 12px;
+}
